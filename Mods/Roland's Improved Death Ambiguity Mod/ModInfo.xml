@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Roland's improved death ambiguity mod" />
+		<Description value="No death animation, death sound, and random stun recovery" />
+		<Author value="Roland" />
+		<Version value="1.0" />
+		
+	</ModInfo>
+</xml>

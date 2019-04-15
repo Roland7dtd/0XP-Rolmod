@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="This is dual timer designed to countdown 60 minutes of realtime and then restart again." />
+		<Description value="Assigns a skill point per day." />
+		<Author value="GuppyCur and Roland" />
+		<Version value="1.02" />
+		<Website value="http://sdxmods.com" />
+	</ModInfo>
+</xml>

@@ -1,5 +1,0 @@
-<configs>
-<!-- <This removes repair xp /> -->
-	<set xpath="/items/item/property[@name='RepairExpMultiplier']/@value">0</set>
-	
-</configs>

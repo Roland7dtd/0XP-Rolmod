@@ -1,9 +1,0 @@
-<configs>
-<!-- <This changes progression to be a flat 2000 xp to level for every level. By making quests grant 100,000 xp and setting the game to 2% xp, it works. /> -->
-	
-	<set xpath="/progression/level/@experience_multiplier">1.0</set>
-	<set xpath="/progression/level/@exp_to_level">2000</set>
-	
-<!-- <This removes the player level gates from the crafting perks /> -->	
-        <set xpath="/progression/perks/perk/level_requirements/requirement[@name='PlayerLevel']/@value">1</set>
-</configs>

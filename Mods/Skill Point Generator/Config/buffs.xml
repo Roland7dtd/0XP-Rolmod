@@ -4,7 +4,7 @@
 	<append xpath="/buffs">   
     <buff name="buffGiveDailyXPNotYet" name_key="buffInjuryBleedingName"  icon="ui_game_symbol_xp" icon_color="132,0,155" icon_blink="false">
         <stack_type value="ignore"/>
-        <duration value="4068"/>    
+        <duration value="4050"/>    
         <effect_group>
         
             <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="buffGiveDailyXP"/> 
@@ -30,7 +30,7 @@
 <!-- This starts the second timer to get 2 skillpoints per day once you've survived long enough./> -->	
     <buff name="buffGiveDailyXPNotYet2" name_key="buffInjuryBleedingName"  icon="ui_game_symbol_xp" icon_color="132,0,155" icon_blink="false">
         <stack_type value="ignore"/>
-        <duration value="4068"/>    
+        <duration value="4050"/>    
         <effect_group>
         
             <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="buffGiveDailyXP2"/> 
@@ -51,7 +51,7 @@
 <!-- This starts the third timer to get 3 skillpoints per day once you've survived long enough./> -->	
 	<buff name="buffGiveDailyXPNotYet3" name_key="buffInjuryBleedingName"  icon="ui_game_symbol_xp" icon_color="132,0,155" icon_blink="false">
         <stack_type value="ignore"/>
-        <duration value="4068"/>    
+        <duration value="4050"/>    
         <effect_group>
         
             <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="buffGiveDailyXP3"/> 

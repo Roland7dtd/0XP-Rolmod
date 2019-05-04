@@ -1,5 +1,0 @@
-<configs>
-<!-- <This changes all materials to have zero experience attached to them /> -->
-	<set xpath="/materials/material/property[@name='Experience']/@value">0</set>
-		
-</configs>

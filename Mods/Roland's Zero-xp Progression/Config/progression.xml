@@ -1,0 +1,10 @@
+<configs>
+<!-- <This removes the player level gates from the crafting perks /> -->	
+    <set xpath="/progression/perks/perk/level_requirements/requirement[@name='PlayerLevel']/@value">1</set>
+	
+<!-- <This changes the costs for attributes to be more expensive since more skillpoints are being given /> -->	
+    <set xpath="/progression/attributes/@cost_multiplier_per_level">1.2</set>	
+	
+<!-- <This changes the costs for perks to be more expensive since more skillpoints are being given /> -->	
+    <set xpath="/progression/perks/@cost_multiplier_per_level">1.4</set>		
+</configs>

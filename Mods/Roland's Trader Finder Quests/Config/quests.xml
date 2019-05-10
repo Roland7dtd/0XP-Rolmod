@@ -1,0 +1,10 @@
+<configs>
+<append xpath="/quests/quest[starts-with(@id, 'treasure')]">
+	<reward type="Quest" id="quest_whiteRiverCitizen1">
+			<property name="chainquest" value="false" />
+		</reward>
+		<reward type="SkillPoints" value="0" chainreward="true" />
+	</append>
+	
+	
+</configs>

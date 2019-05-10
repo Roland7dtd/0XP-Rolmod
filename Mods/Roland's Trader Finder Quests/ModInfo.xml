@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Trader Finder" />
+		<Description value="Adds the trader finding quest reward to all the treasure quests" />
+		<Author value="Roland" />
+		<Version value="1.0" />
+		<Website value="Nothing Yet" />
+	</ModInfo>
+</xml>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="True" />
+    <property name="ExcludeDistantPOIMesh" value="False" />
+    <property name="ExcludePOICulling" value="False" />
+    <property name="DistantPOIYOffset" value="0" />
+    <property name="AllowTopSoilDecorations" value="False" />
+    <property name="DifficultyTier" value="1" />
+    <property name="TraderArea" value="False" />
+    <property name="SleeperVolumeSize" value="25, 5, 25#25, 5, 25#25, 5, 25#25, 5, 25#25, 5, 25#25, 5, 25#25, 5, 25" />
+    <property name="SleeperVolumeStart" value="20, 1, 15#20, 6, 15#20, 11, 15#20, 16, 15#20, 21, 15#20, 26, 15#20, 31, 15" />
+    <property name="SleeperVolumeGroup" value="S_-Group_Generic_Zombie,2,3,S_-Group_Generic_Zombie,5,6,S_-Group_Generic_Zombie,2,3,S_-Group_Generic_Zombie,6,7,S_-Group_Generic_Zombie,2,3,S_-Group_Generic_Zombie,8,9,S_-Group_Generic_Zombie,2,3" />
+    <property name="SleeperIsLootVolume" value="False,False,False,False,False,False,False" />
+    <property name="SleeperIsBossVolume" value="False,False,False,False,False,False,False" />
+    <property name="YOffset" value="-1" />
+</prefab>

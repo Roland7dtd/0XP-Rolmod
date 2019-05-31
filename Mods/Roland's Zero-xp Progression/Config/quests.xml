@@ -23,30 +23,44 @@
 	<set xpath="/quests/quest[@id='tier5_fetch_clear']/reward[@type='SkillPoints']/@value">3</set>
 	<set xpath="/quests/quest[@id='tier5_hidden_clear']/reward[@type='SkillPoints']/@value">3</set>	
 	
-<!-- <This deletes the original starter quests 3, 4, and 8 /> -->	
+<!-- <This deletes the original starter quests 2-8 /> -->	
+	<remove xpath="/quests/quest[@id='quest_BasicSurvival1']"/>
 	<remove xpath="/quests/quest[@id='quest_BasicSurvival3']"/>
 	<remove xpath="/quests/quest[@id='quest_BasicSurvival4']"/>
+	<remove xpath="/quests/quest[@id='quest_BasicSurvival5']"/>
+	<remove xpath="/quests/quest[@id='quest_BasicSurvival6']"/>
+	<remove xpath="/quests/quest[@id='quest_BasicSurvival7']"/>
 	<remove xpath="/quests/quest[@id='quest_BasicSurvival8']"/>
 	
-<!-- <This changes the remaining quests to become the new 3, 4, and 5   /> -->	
-	<set xpath="/quests/quest[@id='quest_BasicSurvival5']/@id">quest_BasicSurvival3</set>
-	<set xpath="/quests/quest[@id='quest_BasicSurvival6']/@id">quest_BasicSurvival4</set>
-	<set xpath="/quests/quest[@id='quest_BasicSurvival7']/@id">quest_BasicSurvival5</set>
-
-<!-- <This repoints each quest to the next new quest in the altered chain /> -->	
-	<set xpath="/quests/quest[@id='quest_BasicSurvival3']/reward[@type='Quest']/@id">quest_BasicSurvival4</set>
-	<set xpath="/quests/quest[@id='quest_BasicSurvival4']/reward[@type='Quest']/@id">quest_BasicSurvival5</set>
+<!-- <This changes the remaining quest 2 to become the new quest 1   /> -->	
+	<set xpath="/quests/quest[@id='quest_BasicSurvival2']/@id">quest_BasicSurvival1</set>
 	
-<!-- <This alters quest five by removing the tasks of placing and upgrading the blocks and moves the final rewards and beginning of the trader quest to the new quest 5 /> -->	
-	<remove xpath="/quests/quest[@id='quest_BasicSurvival5']/objective[@type='BlockPlace']"/>
-	<remove xpath="/quests/quest[@id='quest_BasicSurvival5']/objective[@type='BlockUpgrade']"/>
-	<remove xpath="/quests/quest[@id='quest_BasicSurvival5']/reward[@type='Quest']"/>	
-	<append xpath="/quests/quest[@id='quest_BasicSurvival5']">
+	
+
+<!-- <This alters quest one by altering the task to simply get a bedroll by any means /> -->	
+	<remove xpath="/quests/quest[@id='quest_BasicSurvival1']/objective[@type='FetchKeep']"/>
+	<remove xpath="/quests/quest[@id='quest_BasicSurvival1']/objective[@type='FetchKeep']"/>
+	<remove xpath="/quests/quest[@id='quest_BasicSurvival1']/objective[@type='FetchKeep']"/>
+	<remove xpath="/quests/quest[@id='quest_BasicSurvival1']/objective[@type='Craft']"/>
+	<remove xpath="/quests/quest[@id='quest_BasicSurvival1']/reward[@type='Quest']"/>
+	
+	<insertBefore xpath="/quests/quest[@id='quest_BasicSurvival1']/reward[@type='SkillPoints']">
+		
+		<objective type="Craft" id="meleeToolStoneAxe" value="1" phase="1" />
+		<objective type="Craft" id="plantFiberPants" value="1" phase="1" />
+		<objective type="Craft" id="plantFiberShirt" value="1" phase="1" />
+		<objective type="Craft" id="meleeClubWood" value="1" phase="1" />
+		<objective type="Craft" id="gunWoodenBow" value="1" phase="1" />
+		<objective type="Craft" id="ammoArrowStone" value="6" phase="1" />
+		
+		
+	</insertBefore>
+	
+	<append xpath="/quests/quest[@id='quest_BasicSurvival1']">
 		<reward type="Quest" id="quest_whiteRiverCitizen1">
 			<property name="chainquest" value="false" />
 		</reward>
-		<reward type="SkillPoints" value="0" chainreward="true" />
+		<reward type="SkillPoints" value="4" chainreward="true" />
 	</append>
-	
 	
 </configs>

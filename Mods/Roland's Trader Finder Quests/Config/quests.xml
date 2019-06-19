@@ -8,7 +8,8 @@
 	<reward type="SkillPoints" value="0" chainreward="true" />
 </append>
 
-<!-- These quests are about improving the trader compounds and can only be used if you have removed protections from the trader. If you are playing with protected traders you should remove these quests. -->
+<!-- These quests are about improving the trader compounds and can only be used if you have removed protections from the trader. 
+     If you are playing with protected traders you should remove these quests. -->
 <insertBefore xpath="/quests/quest[@id='tier1_buried_supplies']" >	
 	<quest id="tier1_stationcraft">                                            
 		<property name="name_key" value="Craft A Workstation" />
@@ -182,7 +183,8 @@
 	
 </insertBefore>
 
-<!-- This section adds the trader compound improvement quests to the list of quests. Remove this section if you are playing with protected traders -->
+<!-- This section adds the trader compound improvement quests to the list of quests. 
+     Remove this section if you are playing with protected traders -->
 <insertAfter xpath="/quests/quest_list[@id='trader_quests']/quest[@id='tier1_buried_supplies']">
 	  <quest id="tier1_stationcraft" />
 	  <quest id="tier1_traderimprove" />

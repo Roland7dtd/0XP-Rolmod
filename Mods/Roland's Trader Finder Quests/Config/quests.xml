@@ -1,10 +1,196 @@
 <configs>
+
+<!-- This quest gives a chance to find a new trader after digging up a treasure chest -->
 <append xpath="/quests/quest[starts-with(@id, 'treasure')]">
 	<reward type="Quest" id="quest_whiteRiverCitizen1">
-			<property name="chainquest" value="false" />
-		</reward>
-		<reward type="SkillPoints" value="0" chainreward="true" />
-	</append>
+		<property name="chainquest" value="false" />
+	</reward>
+	<reward type="SkillPoints" value="0" chainreward="true" />
+</append>
+
+<!-- These quests are about improving the trader compounds and can only be used if you have removed protections from the trader. If you are playing with protected traders you should remove these quests. -->
+<insertBefore xpath="/quests/quest[@id='tier1_buried_supplies']" >	
+	<quest id="tier1_stationcraft">                                            
+		<property name="name_key" value="Craft A Workstation" />
+		<property name="subtitle_key" value="Campfire Workstation" />
+		<property name="description_key" value="Build a campfire" />
+		<property name="icon" value="ui_game_symbol_quest" />
+		<property name="repeatable" value="false" />
+		<property name="category_key" value="quest" />
+		<property name="offer_key" value="I need you to improve my compound by building me a campfire with a cooking pot." />
+		<property name="difficulty" value="medium" />
+		<property name="difficulty_tier" value="1" />
+		<property name="statement_key" value="Place a campfire workstation complete with cooking pot." />
+		<property name="response_key" value="Build a Campfire with Cooking Pot" />
+		<property name="login_rally_reset" value="false" />
+
+		<property name="completiontype" value="TurnIn" />
+		<property name="completion_key" value="Thanks for the campfire. Feel free to use it all you want." />
+
+		
+		<objective type="FetchKeep" id="toolCookingPot" value="1" phase="1" />
+		
+		<objective type="Craft" id="campfire" value="1" phase="1" />
+		
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2" />
+		</objective>
+			
+		<objective type="BlockPlace" id="campfire" value="1" phase="3" />
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="4" />
+		</objective>
+
+		<reward type="Exp" value="5000" />
+		<reward type="Item" id="casinoCoin" value="300-750" />
+
+		<reward type="LootItem" id="questMelee,questRanged" ischosen="true" isfixed="true" value="2" />
+		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="2" />
+		<reward type="LootItem" id="questAmmo" ischosen="true" value="2" />
+		<reward type="LootItem" id="questTools" ischosen="true" value="2" />
+		<reward type="LootItem" id="questSchematics" ischosen="true" value="2" />
+		<reward type="LootItem" id="questMods" ischosen="true" value="2" />
+	</quest>
 	
+	<quest id="tier2_stationcraft">                                                 
+		<property name="name_key" value="Craft a Workstation" />
+		<property name="subtitle_key" value="Forge Workstation" />
+		<property name="description_key" value="Build a forge" />
+		<property name="icon" value="ui_game_symbol_quest" />
+		<property name="repeatable" value="false" />
+		<property name="category_key" value="quest" />
+		<property name="offer_key" value="I need you to improve my compound by building me a forge with an anvil." />
+		<property name="difficulty" value="medium" />
+		<property name="difficulty_tier" value="2" />
+		<property name="statement_key" value="Place a forge complete with anvil." />
+		<property name="response_key" value="Build a forge with anvil" />
+		<property name="login_rally_reset" value="false" />
+
+		<property name="completiontype" value="TurnIn" />
+		<property name="completion_key" value="Thanks for the forge. Feel free to use it any time." />
+
+		
+		
+		<objective type="Craft" id="forge" value="1" phase="1" />
+		<objective type="FetchKeep" id="toolAnvil" value="1" phase="1" />
+		
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2" />
+		</objective>
+			
+		<objective type="BlockPlace" id="forge" value="1" phase="3" />
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="4" />
+		</objective>
+
+		<reward type="Exp" value="7500" />
+		<reward type="Item" id="casinoCoin" value="750-1125" />
+
+		<reward type="LootItem" id="questMelee,questRanged" ischosen="true" isfixed="true" value="3" />
+		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="3" />
+		<reward type="LootItem" id="questAmmo" ischosen="true" value="3" />
+		<reward type="LootItem" id="questTools" ischosen="true" value="3" />
+		<reward type="LootItem" id="questSchematics" ischosen="true" value="3" />
+		<reward type="LootItem" id="questMods" ischosen="true" value="3" />
+	</quest>
+	
+	<quest id="tier1_traderimprove">                                          
+		<property name="name_key" value="Trader Compound Improvements" />
+		<property name="subtitle_key" value="Brick Walls" />
+		<property name="description_key" value="Place flagstone and upgrade" />
+		<property name="icon" value="ui_game_symbol_quest" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="quest" />
+		<property name="offer_key" value="I need you to improve my defenses by placing flagstone blocks and upgrading them to brick." />
+		<property name="difficulty" value="medium" />
+		<property name="difficulty_tier" value="1" />
+		<property name="statement_key" value="Strengthen my walls by building flagstone and upgrading to brick" />
+		<property name="response_key" value="Improve Defenses: Brick Walls" />
+		<property name="login_rally_reset" value="false" />
+
+		<property name="completiontype" value="TurnIn" />
+		<property name="completion_key" value="Thanks for beefing up my walls. We'll all feel safer trading now." />
+
+		<objective type="FetchKeep" id="resourceCobblestones" value="560" phase="1" />
+		<objective type="Craft" id="flagstoneBlock" value="40" phase="1" />
+		
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2" />
+		</objective>
+			
+		<objective type="BlockPlace" id="flagstoneBlock" value="40" phase="3" />
+		<objective type="BlockUpgrade" id="flagstoneBlock" value="40" phase="3" />
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="4" />
+		</objective>
+
+		<reward type="Exp" value="5000" />
+		<reward type="Item" id="casinoCoin" value="300-750" />
+
+		<reward type="LootItem" id="questMelee,questRanged" ischosen="true" isfixed="true" value="2" />
+		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="2" />
+		<reward type="LootItem" id="questAmmo" ischosen="true" value="2" />
+		<reward type="LootItem" id="questTools" ischosen="true" value="2" />
+		<reward type="LootItem" id="questSchematics" ischosen="true" value="2" />
+		<reward type="LootItem" id="questMods" ischosen="true" value="2" />
+	</quest>
+	
+	<quest id="tier2_traderimprove">                
+		<property name="name_key" value="Trader Compound Improvements" />
+		<property name="subtitle_key" value="Brick Walls" />
+		<property name="description_key" value="Place flagstone and upgrade" />
+		<property name="icon" value="ui_game_symbol_quest" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="quest" />
+		<property name="offer_key" value="I need you to improve my defenses by placing flagstone blocks and upgrading them to brick." />
+		<property name="difficulty" value="medium" />
+		<property name="difficulty_tier" value="2" />
+		<property name="statement_key" value="Strengthen my walls by building flagstone and upgrading to brick" />
+		<property name="response_key" value="Improve Defenses: Brick Walls" />
+		<property name="login_rally_reset" value="false" />
+
+		<property name="completiontype" value="TurnIn" />
+		<property name="completion_key" value="Thanks for beefing up my walls. We'll all feel safer trading now." />
+
+		<objective type="FetchKeep" id="resourceCobblestones" value="980" phase="1" />
+		<objective type="Craft" id="flagstoneBlock" value="70" phase="1" />
+		
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2" />
+		</objective>
+			
+		<objective type="BlockPlace" id="flagstoneBlock" value="70" phase="3" />
+		<objective type="BlockUpgrade" id="flagstoneBlock" value="70" phase="3" />
+		
+		<objective type="InteractWithNPC">
+			<property name="phase" value="4" />
+		</objective>
+
+		<reward type="Exp" value="7500" />
+		<reward type="Item" id="casinoCoin" value="750-1125" />
+
+		<reward type="LootItem" id="questMelee,questRanged" ischosen="true" isfixed="true" value="3" />
+		<reward type="LootItem" id="questArmor,questMedical" ischosen="true" isfixed="true" value="3" />
+		<reward type="LootItem" id="questAmmo" ischosen="true" value="3" />
+		<reward type="LootItem" id="questTools" ischosen="true" value="3" />
+		<reward type="LootItem" id="questSchematics" ischosen="true" value="3" />
+		<reward type="LootItem" id="questMods" ischosen="true" value="3" />
+	</quest>
+	
+</insertBefore>
+
+<!-- This section adds the trader compound improvement quests to the list of quests. Remove this section if you are playing with protected traders -->
+<insertAfter xpath="/quests/quest_list[@id='trader_quests']/quest[@id='tier1_buried_supplies']">
+	  <quest id="tier1_stationcraft" />
+	  <quest id="tier1_traderimprove" />
+</insertAfter>
+
+<insertAfter xpath="/quests/quest_list[@id='trader_quests']/quest[@id='tier2_fetch_clear']">
+	  <quest id="tier2_stationcraft" />
+	  <quest id="tier2_traderimprove" />
+</insertAfter>
 	
 </configs>

@@ -37,7 +37,7 @@
 	
 	
 
-<!-- <This alters quest one by altering the task to simply get a bedroll by any means /> -->	
+<!-- <This alters quest one so that all basic survival tasks can be done in any order. /> -->	
 	<remove xpath="/quests/quest[@id='quest_BasicSurvival1']/objective[@type='FetchKeep']"/>
 	<remove xpath="/quests/quest[@id='quest_BasicSurvival1']/objective[@type='FetchKeep']"/>
 	<remove xpath="/quests/quest[@id='quest_BasicSurvival1']/objective[@type='FetchKeep']"/>

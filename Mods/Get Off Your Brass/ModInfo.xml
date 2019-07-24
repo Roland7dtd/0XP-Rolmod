@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="Get Off Your Brass" />
+        <Description value="This modlet adds a random drop of 0-3 scrap brass to destroyed stone" />
+        <Author value="Roland" />
+        <Version value="1.0" />
+    </ModInfo>
+</xml>

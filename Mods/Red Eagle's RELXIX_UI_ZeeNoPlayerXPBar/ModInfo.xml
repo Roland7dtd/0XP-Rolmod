@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="RELXIX_UI_ZeeNoPlayerXPBar" />
+		<Description value="This removes the XP bar from above the toolbelt." />
+		<Author value="Red Eagle LXIX" />
+		<Version value="1.0.3" />
+		<!--
+		    v1.0.3 - 2018-12-11 - Added a purposeful WRN event to log when files load
+		    v1.0.1 - 2018-11-21 - Correct case of XUi folder for Linux (and probably MAC) compatibility
+		-->
+		<Website value="http://7daystodie.com" />
+	</ModInfo>
+</xml>

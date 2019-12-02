@@ -2,6 +2,7 @@
 <!-- <This changes all quests in the game to give skillpoints instead of experience. Basic quests give zero skillpoints /> -->
 	<set xpath="/quests/quest/reward[@type='Exp']/@type">SkillPoints</set>
 	<set xpath="/quests/quest/reward[@type='SkillPoints']/@value">0</set>
+	<set xpath="/quests/quest[@id='quest_BasicSurvival8']/reward[@type='SkillPoints']/@value">4</set>
 	
 <!-- <These specifically change the higher tier quests to give 1 skillpoint for Tier 3 and 4 and 2 skillpoints for Tier 5 /> -->	
 	

@@ -18,5 +18,7 @@
 	<set xpath="/quests/quest[@id='tier5_fetch']/reward[@type='SkillPoints']/@value">2</set>
 	<set xpath="/quests/quest[@id='tier5_fetch_clear']/reward[@type='SkillPoints']/@value">2</set>
 		
+	<!-- <This line allows Laz Man's Vanguard Quest to give a skillpoint as a reward /> -->	
 	
+	<set xpath="/quests/quest[@id='challenge_bloodmoonvanguard']/reward[@type='SkillPoints']/@value">1</set>
 </configs>

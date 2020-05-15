@@ -4,7 +4,7 @@
 	<append xpath="/buffs">   
     <buff name="buffGiveDailyXPNotYet" name_key="buffInjuryBleedingName"  icon="ui_game_symbol_xp" icon_color="132,0,155" icon_blink="false">
         <stack_type value="ignore"/>
-        <duration value="4050"/>    <!-- 10 min; 1205 20 min; 30 min, 40 min, 3045 50 min; 4050 60 min; 120 min -->
+        <duration value="4048"/>    <!-- 10 min; 1205 20 min; 30 min, 40 min, 3045 50 min; 4050 60 min; 120 min -->
         <effect_group>
         
             <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="buffGiveDailyXP"/> 
@@ -32,7 +32,7 @@
 <!-- This starts the second timer to maintain 1 skillpoint for the second day/> -->	
     <buff name="buffGiveDailyXPNotYet2" name_key="buffInjuryBleedingName"  >
         <stack_type value="ignore"/>
-        <duration value="4050"/>    
+        <duration value="4048"/>    
         <effect_group>
         
             <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="buffGiveDailyXP2"/> 
@@ -52,7 +52,7 @@
 <!-- This starts the third timer to get 2 skillpoints per day on the third day /> -->	
 	<buff name="buffGiveDailyXPNotYet3" name_key="buffInjuryBleedingName"  icon="ui_game_symbol_xp" icon_color="132,0,155" icon_blink="false">
         <stack_type value="ignore"/>
-        <duration value="4050"/>    
+        <duration value="4048"/>    
         <effect_group>
         
             <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="buffGiveDailyXP3"/> 
@@ -75,7 +75,7 @@
 <!-- This starts the fourth timer to maintain 2 skillpoints per day for the fourth day/> -->	
 	<buff name="buffGiveDailyXPNotYet4" name_key="buffInjuryBleedingName" >
         <stack_type value="ignore"/>
-        <duration value="4050"/>    
+        <duration value="4048"/>    
         <effect_group>
         
             <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="buffGiveDailyXP4"/> 
@@ -97,7 +97,7 @@
 	<!-- This starts the fifth timer to get 3 skillpoints per day after the fifth day./> -->	
 	<buff name="buffGiveDailyXPNotYet5" name_key="buffInjuryBleedingName"  icon="ui_game_symbol_xp" icon_color="132,0,155" icon_blink="false">
         <stack_type value="ignore"/>
-        <duration value="4050"/>    
+        <duration value="4048"/>    
         <effect_group>
         
             <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="buffGiveDailyXP5"/> 

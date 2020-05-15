@@ -1,0 +1,130 @@
+<configs>
+
+ 	<append xpath="/entity_classes">
+	
+			<!-- For Future Version
+			<entity_class name="BM_animalZombieDog" extends="animalZombieDog"></entity_class>
+			-->
+			<!-- No Feral/Radiated animalZombieDog -->			
+			<!-- For Future Version
+			<entity_class name="BM_animalZombieVulture" extends="animalZombieVulture"></entity_class>
+			<entity_class name="BM_animalZombieVultureRadiated" extends="animalZombieVultureRadiated"></entity_class>
+			-->
+			<entity_class name="BM_zombieArlene" extends="zombieArlene"></entity_class>
+				<property name="LootDropProb" value="0.15"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieArleneFeral" extends="zombieArleneFeral"></entity_class>	
+				<property name="LootDropProb" value="0.20"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieArleneRadiated" extends="zombieArleneRadiated"></entity_class>		
+				<property name="LootDropProb" value="0.25"/> <!-- Whether it drops a loot bag on death or not. -->
+			<!-- No Normal/Feral zombieBiker in vanilla BM hordes -->
+			<entity_class name="BM_zombieBikerRadiated" extends="zombieBikerRadiated"></entity_class>
+				<property name="LootDropProb" value="0.25"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieBoe" extends="zombieBoe"></entity_class>
+				<property name="LootDropProb" value="0.15"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieBoeFeral" extends="zombieBoeFeral"></entity_class>
+				<property name="LootDropProb" value="0.20"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieBoeRadiated" extends="zombieBoeRadiated"></entity_class>
+				<property name="LootDropProb" value="0.25"/> <!-- Whether it drops a loot bag on death or not. -->
+			<!-- No Normal zombieBurnt in vanilla BM hordes & No Feral/Radidated zombieBurnt -->
+			<entity_class name="BM_zombieBusinessMan" extends="zombieBusinessMan"></entity_class>
+				<property name="LootDropProb" value="0.15"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieBusinessManFeral" extends="zombieBusinessManFeral"></entity_class>
+				<property name="LootDropProb" value="0.20"/> <!-- Whether it drops a loot bag on death or not. -->
+			<!-- No Radidated zombieBusinessMan -->
+			<!-- No Normal/Feral zombieCheerleader in vanilla BM hordes -->
+			<entity_class name="BM_zombieCheerleaderRadiated" extends="zombieCheerleaderRadiated"></entity_class>	
+				<property name="LootDropProb" value="0.25"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieDarlene" extends="zombieDarlene"></entity_class>
+				<property name="LootDropProb" value="0.15"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieDarleneFeral" extends="zombieDarleneFeral"></entity_class>
+				<property name="LootDropProb" value="0.20"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieDarleneRadiated" extends="zombieDarleneRadiated"></entity_class>	
+				<property name="LootDropProb" value="0.25"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieDemolition" extends="zombieDemolition"></entity_class>	
+				<property name="LootDropProb" value="0.40"/> <!-- Whether it drops a loot bag on death or not. -->
+			<!-- No Feral/Radidated zombieDemolition -->
+			<entity_class name="BM_zombieFatCop" extends="zombieFatCop"></entity_class>
+				<property name="LootDropProb" value="0.15"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieFatCopFeral" extends="zombieFatCopFeral"></entity_class>
+				<property name="LootDropProb" value="0.20"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieFatCopRadiated" extends="zombieFatCopRadiated"></entity_class>	
+				<property name="LootDropProb" value="0.25"/> <!-- Whether it drops a loot bag on death or not. -->
+			<!-- No Normal/Feral zombieFarmer in vanilla BM hordes & No Radidated zombieFarmer -->
+			<!-- No Normal/Feral zombieFatHawaiian in vanilla BM hordes & No Radidated zombieFatHawaiian -->			
+			<entity_class name="BM_zombieFemaleFat" extends="zombieFemaleFat"></entity_class>
+				<property name="LootDropProb" value="0.15"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieFemaleFatFeral" extends="zombieFemaleFatFeral"></entity_class>
+				<property name="LootDropProb" value="0.20"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieFemaleFatRadiated" extends="zombieFemaleFatRadiated"></entity_class>
+				<property name="LootDropProb" value="0.25"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieJoe" extends="zombieJoe"></entity_class>
+				<property name="LootDropProb" value="0.15"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieJoeFeral" extends="zombieJoeFeral"></entity_class>
+				<property name="LootDropProb" value="0.20"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieJoeRadiated" extends="zombieJoeRadiated"></entity_class>
+				<property name="LootDropProb" value="0.25"/> <!-- Whether it drops a loot bag on death or not. -->
+			<!-- No zombieMaleHazmat in vanilla BM hordes & No Feral/Radidated zombieMaleHazmat -->
+			<entity_class name="BM_zombieMarlene" extends="zombieMarlene"></entity_class>
+				<property name="LootDropProb" value="0.15"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieMarleneFeral" extends="zombieMarleneFeral"></entity_class>
+				<property name="LootDropProb" value="0.20"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieMarleneRadiated" extends="zombieMarleneRadiated"></entity_class>
+				<property name="LootDropProb" value="0.25"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieMoe" extends="zombieMoe"></entity_class>
+				<property name="LootDropProb" value="0.15"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieMoeFeral" extends="zombieMoeFeral"></entity_class>
+				<property name="LootDropProb" value="0.20"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieMoeRadiated" extends="zombieMoeRadiated"></entity_class>
+				<property name="LootDropProb" value="0.25"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieNurse" extends="zombieNurse"></entity_class>
+				<property name="LootDropProb" value="0.15"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieNurseFeral" extends="zombieNurseFeral"></entity_class>
+				<property name="LootDropProb" value="0.20"/> <!-- Whether it drops a loot bag on death or not. -->
+			<!-- No Radidated zombieNurse -->			
+			<!-- No Normal/Feral zombieOldTimer in vanilla BM hordes -->
+			<entity_class name="BM_zombieOldTimerRadiated" extends="zombieOldTimerRadiated"></entity_class>	
+				<property name="LootDropProb" value="0.25"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieSkateboarder" extends="zombieSkateboarder"></entity_class>
+				<property name="LootDropProb" value="0.15"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieSkateboarderFeral" extends="zombieSkateboarderFeral"></entity_class>
+				<property name="LootDropProb" value="0.20"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieSkateboarderRadiated" extends="zombieSkateboarderRadiated"></entity_class>		
+				<property name="LootDropProb" value="0.25"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieSpider" extends="zombieSpider"></entity_class>
+				<property name="LootDropProb" value="0.15"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieSpiderFeral" extends="zombieSpiderFeral"></entity_class>
+				<property name="LootDropProb" value="0.20"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieSpiderRadiated" extends="zombieSpiderRadiated"></entity_class>	
+				<property name="LootDropProb" value="0.25"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieSoldier" extends="zombieSoldier"></entity_class>
+				<property name="LootDropProb" value="0.15"/> <!-- Whether it drops a loot bag on death or not. -->
+			<!-- No Feral zombieSoldier in vanilla BM hordes -->			
+			<entity_class name="BM_zombieSoldierRadiated" extends="zombieSoldierRadiated"></entity_class>
+				<property name="LootDropProb" value="0.25"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieSteve" extends="zombieSteve"></entity_class>
+				<property name="LootDropProb" value="0.15"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieSteveFeral" extends="zombieSteveFeral"></entity_class>
+				<property name="LootDropProb" value="0.20"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieSteveRadiated" extends="zombieSteveRadiated"></entity_class>
+				<property name="LootDropProb" value="0.25"/> <!-- Whether it drops a loot bag on death or not. -->
+			<!-- No zombieStripper/zombieStripperFerals in vanilla BM hordes & No Radidated zombieStripper -->	
+			<entity_class name="BM_zombieUtilityWorker" extends="zombieUtilityWorker"></entity_class>
+				<property name="LootDropProb" value="0.15"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieUtilityWorkerFeral" extends="zombieUtilityWorkerFeral"></entity_class>
+				<property name="LootDropProb" value="0.20"/> <!-- Whether it drops a loot bag on death or not. -->
+			<!-- No Radiated zombieUtilityWorker -->
+			<entity_class name="BM_zombieYo" extends="zombieYo"></entity_class>
+				<property name="LootDropProb" value="0.15"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieYoFeral" extends="zombieYoFeral"></entity_class>
+				<property name="LootDropProb" value="0.20"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieYoRadiated" extends="zombieYoRadiated"></entity_class>
+				<property name="LootDropProb" value="0.25"/> <!-- Whether it drops a loot bag on death or not. -->
+			<!-- No Normal zombieWight -->			
+			<entity_class name="BM_zombieWightFeral" extends="zombieWightFeral"></entity_class>
+				<property name="LootDropProb" value="0.20"/> <!-- Whether it drops a loot bag on death or not. -->
+			<entity_class name="BM_zombieWightRadiated" extends="zombieWightRadiated"></entity_class>	
+				<property name="LootDropProb" value="0.25"/> <!-- Whether it drops a loot bag on death or not. -->
+			
+	</append>		
+
+</configs>

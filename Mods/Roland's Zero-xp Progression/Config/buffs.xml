@@ -1,5 +1,5 @@
 <configs>
-<!-- <This removes the protection buff at the start of the game /> -->
+<!-- <This removes the protection buff at the start of the game. /> -->
 	
 	<remove xpath="/buffs/buff[@name='buffNewbieCoat']"/>
 		

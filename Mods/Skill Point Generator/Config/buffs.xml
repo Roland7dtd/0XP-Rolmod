@@ -4,7 +4,7 @@
 	<append xpath="/buffs">   
     <buff name="buffGiveDailyXPNotYet" name_key="buffInjuryBleedingName"  icon="ui_game_symbol_xp" icon_color="132,0,155" icon_blink="false">
         <stack_type value="ignore"/>
-        <duration value="4048"/>    <!-- 10 min; 1205 20 min; 30 min, 40 min, 3045 50 min; 4050 60 min; 120 min -->
+        <duration value="4048"/>    <!-- 10 min; 1205 20 min; 30 min, 40 min, 3045 50 min; 4048 60 min; 120 min -->
         <effect_group>
         
             <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" target="self" buff="buffGiveDailyXP"/> 

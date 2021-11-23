@@ -1,4 +1,4 @@
 <configs>
 <!-- <Slightly increased loot drop probability. /> -->
-	<set xpath="/entity_classes/entity_class/property[@name='LootDropProb']/@value">.08</set>	
+	<set xpath="/entity_classes/entity_class/property[@name='LootDropProb']/@value">.05</set>	
 </configs>

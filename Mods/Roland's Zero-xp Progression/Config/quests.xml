@@ -4,21 +4,16 @@
 	<set xpath="/quests/quest/reward[@type='SkillPoints']/@value">0</set>
 	<set xpath="/quests/quest[@id='quest_BasicSurvival8']/reward[@type='SkillPoints']/@value">4</set>
 	
-<!-- <These specifically change the higher tier quests to give 1 skillpoint for Tier 3 and 4 and 2 skillpoints for Tier 5 /> -->	
+<!-- <These specifically change the higher tier quests to give 1 skillpoint for Tier 4 and 2 skillpoints for Tier 5 /> -->	
 	
-	<set xpath="/quests/quest[@id='tier3_clear']/reward[@type='SkillPoints']/@value">1</set>
-	<set xpath="/quests/quest[@id='tier3_fetch']/reward[@type='SkillPoints']/@value">1</set>
-	<set xpath="/quests/quest[@id='tier3_fetch_clear']/reward[@type='SkillPoints']/@value">1</set>
-		
+			
 	<set xpath="/quests/quest[@id='tier4_clear']/reward[@type='SkillPoints']/@value">1</set>
 	<set xpath="/quests/quest[@id='tier4_fetch']/reward[@type='SkillPoints']/@value">1</set>
+	<set xpath="/quests/quest[@id='tier4_restore_power']/reward[@type='SkillPoints']/@value">1</set>
 	<set xpath="/quests/quest[@id='tier4_fetch_clear']/reward[@type='SkillPoints']/@value">1</set>
+	
 		
 	<set xpath="/quests/quest[@id='tier5_clear']/reward[@type='SkillPoints']/@value">2</set>
 	<set xpath="/quests/quest[@id='tier5_fetch']/reward[@type='SkillPoints']/@value">2</set>
 	<set xpath="/quests/quest[@id='tier5_fetch_clear']/reward[@type='SkillPoints']/@value">2</set>
 		
-	<!-- <This line allows Laz Man's Vanguard Quest to give a skillpoint as a reward /> -->	
-	
-	<set xpath="/quests/quest[@id='challenge_bloodmoonvanguard']/reward[@type='SkillPoints']/@value">1</set>
-</configs>

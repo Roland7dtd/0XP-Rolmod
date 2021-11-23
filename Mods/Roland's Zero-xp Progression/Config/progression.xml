@@ -1,7 +1,7 @@
 <configs>
 <!-- <This changes the costs for attributes to be more expensive since more skillpoints are being given /> -->	
-    <set xpath="/progression/attributes/@cost_multiplier_per_level">1.2</set>	
+    <set xpath="/progression/attributes/@cost_multiplier_per_level">1.3</set>	
 	
 <!-- <This changes the costs for perks to be more expensive since more skillpoints are being given /> -->	
-    <set xpath="/progression/perks/@cost_multiplier_per_level">1.4</set>		
+    <set xpath="/progression/perks/@cost_multiplier_per_level">1.5</set>		
 </configs>
